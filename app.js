@@ -91,7 +91,7 @@ const getImgs = async (query, chatId) => {
     const browser = await puppeteer.launch(
         { 
             headless: true,
-            executablePath: "./node_modules/chromium/lib/chromium/chrome-linux/chrome.exe"
+            executablePath: "./node_modules/chromium/lib/chromium/chrome-linux/chrome"
         }
     );
     const page = await browser.newPage();
